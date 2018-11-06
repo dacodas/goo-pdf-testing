@@ -1,0 +1,24 @@
+#!/bin/bash 
+
+g++ main.cpp \
+-ggdb \
+-I ../poppler \
+-I../poppler/build/poppler \
+/home/dacoda/poppler/build/CMakeFiles/poppler.dir/poppler/*.cc.o \
+../poppler/build/CMakeFiles/poppler.dir/goo/*.cc.o \
+../poppler/build/CMakeFiles/poppler.dir/splash/*.cc.o \
+../poppler/build/CMakeFiles/poppler.dir/fofi/*.cc.o \
+../poppler/build/cpp/libpoppler-cpp.so \
+-lfreetype \
+-lpng \
+-lz \
+-lfontconfig \
+-ljpeg \
+-lcurl \
+-lsmime3 \
+-lnss3 \
+-lnspr4 \
+-lopenjp2 \
+-llcms2 \
+-ltiff \
+-o main
